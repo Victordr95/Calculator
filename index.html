@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-viewport">
+        <input id="result-viewport" type="text" />
+      </div>
+      <div class="container-button" id="numerosCalc"></div>
+      <div class="container-button">
+        <button type="button" id="opSuma" onclick="suma()">+</button>
+        <button type="button" id="opResta" onclick="resta()">-</button>
+        <button type="button" id="opMulti" onclick="multiplicacion()">*</button>
+        <button type="button" id="opDivi" onclick="division()">/</button>
+        <button type="button" id="opParizq" onclick="parentesisizq()">(</button>
+        <button type="button" id="opParder" onclick="parentesisder()">)</button>
+        <button type="button" id="opPotencia" onclick="potencia('**')">
+          ^
+        </button>
+        <button type="button" id="opIgual" onclick="operacion()">=</button>
+        <button type="button" id="Limpiar campos" onclick="limpiar()">
+          AC
+        </button>
+      </div>
+    </div>
+    <h2>&copy; Víctor Rodríguez</h2>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
